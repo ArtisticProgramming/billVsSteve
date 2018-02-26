@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<link href="Resource/Styles/BillGates_VS_SteveJobs_Game.css" rel="stylesheet" />
+<script src="Resource/Scripts/jquery-1.4.1.min.js"></script>
+<script src="Resource/Scripts/BillGates_VS_SteveJobs_Game.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>BillGates VS SteveJobs Game</title>
+
+</head>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        Game.MakeGamePlane();
+
+    });
+</script>
+
+<body>
+    <div class="GameHead">
+        Bill Gates VS Steve Jobs
+    </div>
+    <div id="GameStruct">
+        <table id="GamePalne" border="1">
+        </table>
+    </div>
+    <div class="Score">
+        Bill Gates : <span id="BillGatesScore">0</span>
+    </div>
+
+    <div class="Score">
+        Steve Jobs: <span id="SteveJobsScore">0</span>
+    </div>
+    <audio controls  class="Aduio">
+        <source src="Resource/Musics/Call_of_Duty_Modern_Warfare_2_-_Opening_Titles.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="Score">
+        <a class="reStart" id="ReStart"  >Play Agine</a>
+    </div>
+    <div id="BillQoute" hidden="hidden">
+        <div id="BillQouteText" class="QuetText">It's fine to celebrate success but it is more important to heed the lessons of failure.</div>
+        <img src="Resource/Images/bill-gates-by-shahin104446.jpg" alt="Alternate Text" />
+    </div>
+    <div id="SteveQoute" hidden="hidden">
+        <div id="SteveQouteText" class="QuetText">
+            Design is not just what it looks like and feels like. Design is how it works.
+        </div>
+        <img src="Resource/Images/steveJobs.jpg" class="steveImg" alt="Alternate Text" />
+    </div>
+</body>
+</html>
+
+<script>
+    $('#ReStart').click(function () {
+        debugger;
+        location.reload();
+    });
+</script>
+
