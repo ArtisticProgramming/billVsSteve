@@ -1,2 +1,2 @@
-# billVsSteve
+# BillVsSteve
 BillVsSteve Is JavaScript Game
